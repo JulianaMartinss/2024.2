@@ -5,4 +5,19 @@
 {% block conteudo %}
     <h1 class="minha-classe">Primeiro App</h1>
     <p>Hello Worlddddddddd!</p>
+    <form method="get">
+        <label for="nome">Nome do Cliente</label>
+        <input type="text" name="nome">
+        <button type="submit">Enviar</button>
+    </form>
+
+    {% if nome_cliente %}
+        <p>o nome do clinete é: {{ nome_cliente }}</p>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+        <p>usuario autenticado e o seu nome é {{ user.username }}</p>
+    {% else %}
+        <p>usuario não autenticado</p>
+    {% endif %}
 {% endblock conteudo %}
