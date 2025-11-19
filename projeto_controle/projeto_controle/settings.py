@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #MyApps
     'app_gestao',
     'app_treinamento',
+    'app_login'
 ]
 
 MIDDLEWARE = [

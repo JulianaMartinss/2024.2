@@ -14,10 +14,12 @@
 </head>
 
 <body>
-  
-{% block content %}{% endblock content %}
 
-{% block scripts %}{% endblock scripts %}
+  {% include 'global/partial/headers.html' %}
+  
+  {% block content %}{% endblock content %}
+
+  {% block scripts %}{% endblock scripts %}
 
 
 </body>
